@@ -1,0 +1,89 @@
+/* Center login form on the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .inner-container{
+    width: 100%;
+    overflow: hidden;
+    height: 220px;
+  }
+  
+  .inner-container1{
+    border: 1px solid red;
+    padding: 10px;
+  }
+
+  .inner-container2 {
+    border: 1px;
+    padding: 10px;
+    display: flex;
+    border: 1px solid blue;
+  }
+
+  .inner-container2 p {
+    flex:1;
+  }
+
+  
+  /* Style the login form */
+  form {
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ccc;
+  }
+  
+  /* Style form input fields */
+  input[type="text"], input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+  }
+  
+  /* Style submit button */
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  /* Style error messages */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .left-container {
+    float: left;
+    width: 65%;
+    height: 200px;
+  }
+  
+  .right-container {
+    float: right;
+    width: 30%;
+    border: 1px solid blue;
+    height: 200px;
+    text-align: center;
+  }
+  

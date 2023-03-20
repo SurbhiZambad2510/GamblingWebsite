@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  </head>
+  <body>
+  <form method="post" action="/bet">
+  <h1>Gambling Site</h1>
+  <div class="inner-container">
+    <div class="left-container">
+      <p>Place your bet on dice number (1 to 6)</p>
+      <p>
+      <label for="amount">bet money</label>
+      <input type="number" name="amount" id="amount" value="">
+      </p>
+      <p>
+      <label for="bet">on </label>
+      <input type="number" name="bet" id="bet" value="">
+      </p>
+      <button type="submit" value="Place Bet">Place Bet</button>
+    </div>
+  
+    <div class="right-container">
+      <p>Total Win  <br><%=  totals[:wins] %></p>
+      <p>Total Loss  <br><%=  totals[:losses] %></p>
+      <p>Total Profit <br><%=  totals[:profit] %></p>
+    </div>
+  </div>
+  <h2>Account</h2>
+  <div class="inner-container2">
+    <p>Overall Wins <br><%= totals[:twin] %></p>
+    <p>Overall Losses <br><%= totals[:tloss] %></p>
+    <p>Total Profit <br><%= totals[:tprofit] %></p>
+    </div>
+    <button type="submit"><a href="/">Logout</a></button>
+  
+  </form>
+  </body>
+</html>
+
